@@ -18,7 +18,7 @@ export default function HomePage() {
     try {
       setLoading(true);
 
-      const response = await fetch()('${import.meta.env.VITE_SERVER_URL}/todos');
+      const response = await fetch()(`${import.meta.env.VITE_SERVER_URL}/todos`);
        // fetch('http://localhost:3000/api/todos')
 
        const todo = await response.json();
